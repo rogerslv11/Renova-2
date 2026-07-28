@@ -1,0 +1,80 @@
+{
+  "portfolioItems": [
+    {
+      "id": 1,
+      "category": "impermeabilizacao",
+      "images": [
+        "/imgs/serviços/1/WhatsApp Image 2026-07-20 at 17.59.38.jpeg",
+        "/imgs/serviços/1/WhatsApp Image 2026-07-20 at 17.59.43.jpeg",
+        "/imgs/serviços/1/WhatsApp Image 2026-07-20 at 17.59.51.jpeg",
+        "/imgs/serviços/1/WhatsApp Image 2026-07-20 at 17.59.57.jpeg",
+        "/imgs/serviços/1/WhatsApp Image 2026-07-20 at 18.00.02.jpeg",
+        "/imgs/serviços/1/WhatsApp Image 2026-07-20 at 18.00.07.jpeg",
+        "/imgs/serviços/1/WhatsApp Image 2026-07-20 at 18.00.11.jpeg"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "reforma",
+      "images": [
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.13.jpeg",
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.13 (1).jpeg",
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.13 (2).jpeg",
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.13 (3).jpeg",
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.14 (1).jpeg",
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.14 (2).jpeg",
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.14 (3).jpeg",
+        "/imgs/serviços/2/WhatsApp Image 2026-07-21 at 14.11.14 (4).jpeg"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "vazamento",
+      "images": [
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.08.jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.08 (1).jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.09.jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.09 (1).jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.09 (2).jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.09 (3).jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.10.jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.10 (1).jpeg",
+        "/imgs/serviços/3/WhatsApp Image 2026-07-21 at 14.23.10 (2).jpeg"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "impermeabilizacao",
+      "images": [
+        "/imgs/serviços/4/WhatsApp Image 2026-07-21 at 17.31.17.jpeg",
+        "/imgs/serviços/4/WhatsApp Image 2026-07-21 at 17.31.18.jpeg",
+        "/imgs/serviços/4/WhatsApp Image 2026-07-21 at 17.31.18 (1).jpeg",
+        "/imgs/serviços/4/WhatsApp Image 2026-07-21 at 17.31.18 (2).jpeg",
+        "/imgs/serviços/4/WhatsApp Image 2026-07-21 at 17.31.18 (3).jpeg",
+        "/imgs/serviços/4/WhatsApp Image 2026-07-21 at 17.31.19.jpeg",
+        "/imgs/serviços/4/WhatsApp Image 2026-07-21 at 17.31.19 (1).jpeg"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "reforma",
+      "images": [
+        "/imgs/serviços/5/WhatsApp Image 2026-07-21 at 17.35.52.jpeg",
+        "/imgs/serviços/5/WhatsApp Image 2026-07-21 at 17.35.52 (1).jpeg",
+        "/imgs/serviços/5/WhatsApp Image 2026-07-21 at 17.35.52 (2).jpeg",
+        "/imgs/serviços/5/WhatsApp Image 2026-07-21 at 17.35.52 (3).jpeg",
+        "/imgs/serviços/5/WhatsApp Image 2026-07-21 at 17.35.53.jpeg",
+        "/imgs/serviços/5/WhatsApp Image 2026-07-21 at 17.35.53 (1).jpeg",
+        "/imgs/serviços/5/WhatsApp Image 2026-07-21 at 17.35.53 (2).jpeg"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "vazamento",
+      "images": [
+        "/imgs/serviços/6/WhatsApp Image 2026-07-21 at 17.27.41.jpeg",
+        "/imgs/serviços/6/WhatsApp Image 2026-07-21 at 17.27.41 (1).jpeg"
+      ]
+    }
+  ]
+}

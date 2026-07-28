@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cliente-1",
+    "name": "Cliente Residencial",
+    "category": "Reforma Completa",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.30.jpeg"
+  },
+  {
+    "id": "cliente-2",
+    "name": "Condomínio Residencial",
+    "category": "Impermeabilização",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.30 (1).jpeg"
+  },
+  {
+    "id": "cliente-3",
+    "name": "Residência Alto Padrão",
+    "category": "Reforma Estrutural",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.30 (2).jpeg"
+  },
+  {
+    "id": "cliente-4",
+    "name": "Casa Familiar",
+    "category": "Pastilhas de Vidro",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.30 (3).jpeg"
+  },
+  {
+    "id": "cliente-5",
+    "name": "Síndico Royal Park",
+    "category": "Detecção Vazamento",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.31.jpeg"
+  },
+  {
+    "id": "cliente-6",
+    "name": "Piscina Comercial",
+    "category": "Revitalização Total",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.31 (1).jpeg"
+  },
+  {
+    "id": "cliente-7",
+    "name": "Hotel & Spa",
+    "category": "Impermeabilização",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.31 (2).jpeg"
+  },
+  {
+    "id": "cliente-8",
+    "name": "Condomínio Clube",
+    "category": "Liner de Fibra",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.32.jpeg"
+  },
+  {
+    "id": "cliente-9",
+    "name": "Residência Canoas",
+    "category": "Reforma Premium",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.32 (1).jpeg"
+  },
+  {
+    "id": "cliente-10",
+    "name": "Edifício Corporativo",
+    "category": "Reservatório",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.32 (2).jpeg"
+  },
+  {
+    "id": "cliente-11",
+    "name": "Cobertura Rooftop",
+    "category": "Impermeabilização",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.32 (3).jpeg"
+  },
+  {
+    "id": "cliente-12",
+    "name": "Residencial Park",
+    "category": "Troca Revestimento",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.33.jpeg"
+  },
+  {
+    "id": "cliente-13",
+    "name": "Casa Gravataí",
+    "category": "Fibra de Vidro",
+    "logo": "/imgs/clientes/WhatsApp Image 2026-07-15 at 17.23.33 (1).jpeg"
+  }
+]
