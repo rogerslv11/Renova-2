@@ -244,7 +244,7 @@ export default function PoolEstimator() {
       return `  - ${item?.title}`;
     }).join('\n');
 
-    const msg = `Olá Engenheiro Victor Joaquim! Utilizei o Simulador de Reforma & Impermeabilização no site e gostaria de solicitar uma vistoria técnica presencial.
+    const msg = `Olá Especialista Victor Joaquim! Utilizei o Simulador de Reforma & Impermeabilização no site e gostaria de solicitar uma vistoria técnica presencial.
 
 *DADOS DA MINHA PISCINA:*
 • Formato: ${shapeLabel}
