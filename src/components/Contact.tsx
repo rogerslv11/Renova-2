@@ -460,7 +460,7 @@ export default function Contact() {
                         Telefone & WhatsApp
                       </h4>
                       <p className="text-slate-800 font-bold text-sm sm:text-base mt-1.5 hover:text-primary transition-colors">
-                        <a href="https://wa.me/5551985733001">+55 (51) 98573-3001</a>
+                        <a href="https://wa.me/qr/EMRMBWHAHKLGE1">+55 (51) 98573-3001</a>
                       </p>
                       <p className="text-[10px] text-emerald-600 font-mono font-medium mt-1 flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -528,7 +528,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   {[
-                    { icon: <Instagram className="w-4 h-4" />, link: 'https://instagram.com', label: 'Instagram' },
+                    { icon: <Instagram className="w-4 h-4" />, link: 'https://www.instagram.com/renovapiscina?igsh=d2xxbG1rMTh4ZmZq', label: 'Instagram' },
                     { icon: <Facebook className="w-4 h-4" />, link: 'https://facebook.com', label: 'Facebook' },
                     { icon: <Linkedin className="w-4 h-4" />, link: 'https://linkedin.com', label: 'LinkedIn' },
                     { icon: <Youtube className="w-4 h-4" />, link: 'https://youtube.com', label: 'YouTube' }

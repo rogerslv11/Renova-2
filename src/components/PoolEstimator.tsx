@@ -265,7 +265,7 @@ ${selectedServices.includes('deck') ? `• Área do Deck Desejado: ${deckSize} m
 Por favor, gostaria de agendar uma visita técnica especializada em Porto Alegre para confirmar a impermeabilização e validar o orçamento definitivo.`;
 
     const encodedText = encodeURIComponent(msg);
-    window.open(`https://wa.me/5551999999999?text=${encodedText}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/5551985733001?text=${encodedText}`, '_blank', 'noopener,noreferrer');
   };
 
   return (

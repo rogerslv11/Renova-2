@@ -329,7 +329,7 @@ export default function Services() {
 
                         <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                           <a
-                            href={`https://wa.me/5511999999999?text=Ol%C3%A1%21+Gostaria+de+saber+mais+detalhes+sobre+o+servi%C3%A7o+de+${encodeURIComponent(selectedService.title)}.`}
+                            href="https://wa.me/qr/EMRMBWHAHKLGE1"
                             target="_blank"
                             referrerPolicy="no-referrer"
                             className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 shadow-md shadow-green-500/10 text-white font-bold rounded-2xl transition-all duration-200 text-center"

@@ -126,7 +126,7 @@ export default function Header({ onNavClick }: HeaderProps) {
               Orçamento Rápido
             </button>
             <a
-              href="https://wa.me/5551985733001?text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento+especialista+para+minha+piscina."
+              href="https://wa.me/qr/EMRMBWHAHKLGE1"
               target="_blank"
               referrerPolicy="no-referrer"
               className="flex items-center gap-2 px-5 py-2.5 text-xs font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 shadow-md shadow-green-500/15 rounded-xl transition-all duration-300 group cursor-pointer hover:scale-[1.02] hover:shadow-green-500/25 active:scale-100"
@@ -139,7 +139,7 @@ export default function Header({ onNavClick }: HeaderProps) {
           {/* Mobile Actions & Hamburguer Toggle */}
           <div className="flex items-center gap-2 lg:hidden">
             <a
-              href="https://wa.me/5551999999999"
+              href="https://wa.me/qr/EMRMBWHAHKLGE1"
               target="_blank"
               referrerPolicy="no-referrer"
               className="flex items-center justify-center w-9 h-9 rounded-xl text-white bg-green-500 hover:bg-green-600 shadow-md shadow-green-500/10 transition-colors"
@@ -219,7 +219,7 @@ export default function Header({ onNavClick }: HeaderProps) {
                   Solicitar Orçamento Presencial
                 </button>
                 <a
-                  href="https://wa.me/5551999999999"
+                  href="https://wa.me/qr/EMRMBWHAHKLGE1"
                   target="_blank"
                   referrerPolicy="no-referrer"
                   className="w-full py-3.5 text-center text-xs font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 rounded-xl flex items-center justify-center gap-2 shadow-sm"

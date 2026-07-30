@@ -159,16 +159,6 @@ function TeamMemberCard({ member, idx }: TeamMemberCardProps) {
               "{member.bio}"
             </p>
           )}
-
-          <div className="space-y-3 pt-3 border-t border-slate-100">
-            {/* Certification */}
-            <div className="flex items-center gap-2 text-xs text-slate-500 font-semibold font-mono">
-              <Star className="w-4 h-4 text-amber-400 fill-amber-400 flex-shrink-0" />
-              <span className="tracking-wide uppercase">{member.certification}</span>
-            </div>
-
-
-          </div>
         </div>
       </div>
     </div>

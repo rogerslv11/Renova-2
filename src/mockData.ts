@@ -214,7 +214,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: 'Victor Joaquim',
-    role: 'Especialista',
+    role: 'Diretor Técnico e Especialista',
     image: victorImage,
     certification: 'Engenheiro Civil & Perito Estrutural (CREA-RS)',
     experience: '20+ anos de experiência',

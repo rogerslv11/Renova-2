@@ -73,7 +73,7 @@ export default function FloatingWhatsApp() {
             {/* Ingress to WhatsApp Action Button */}
             <div className="p-3 bg-white border-t border-slate-50">
               <a
-                href="https://wa.me/5551985733001?text=Ol%C3%A1%21+Gostaria+de+falar+com+o+especialista+respons%C3%A1vel+sobre+manuten%C3%A7%C3%A3o+de+piscina."
+                href="https://wa.me/qr/EMRMBWHAHKLGE1"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 onClick={() => setIsOpen(false)}
