@@ -85,11 +85,11 @@ export default function Hero({ onCtaClick }: HeroProps) {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display font-extrabold text-4xl sm:text-5.5xl lg:text-6.5xl text-white tracking-tight leading-[1.1]"
+            className="font-display font-extrabold text-5xl sm:text-5.5xl lg:text-6.5xl text-white tracking-tight leading-[1.1]"
           >
-            Sua Piscina Sempre <br className="hidden sm:inline" />
+            Somos o ponto final em seus  <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-blue-200 to-white font-black pb-1 inline-block">
-              Segura, Impermeabilizada & Linda
+              problemas com piscina.
             </span>
           </motion.h1>
 
