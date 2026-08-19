@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { trackConversion, trackWhatsAppClick } from '../lib/gtm';
 import { 
   Phone, 
   Mail, 
@@ -99,8 +100,16 @@ export default function Contact() {
     // Simulate server POST with a beautiful delay
     setTimeout(() => {
       setIsSubmitting(false);
-      setProtocol(`RN-${Math.floor(100000 + Math.random() * 900000)}`);
+      const generatedProtocol = `RN-${Math.floor(100000 + Math.random() * 900000)}`;
+      setProtocol(generatedProtocol);
       setSubmitSuccess(true);
+      // Track successful form submission as conversion
+      trackConversion('contact_form_submit', {
+        form_protocol: generatedProtocol,
+        pool_type: formData.tipoPiscina,
+        pool_size: formData.tamanhoPiscina,
+        urgent: formData.urgente,
+      });
       // Reset state
       setFormData({
         nome: '',
@@ -188,7 +197,12 @@ export default function Contact() {
                         Telefone & WhatsApp
                       </h4>
                       <p className="text-slate-800 font-bold text-sm sm:text-base mt-1.5 hover:text-primary transition-colors">
-                        <a href="https://wa.me/qr/EMRMBWHAHKLGE1">+55 (51) 98573-3001</a>
+                        <a
+                          href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                          target="_blank"
+                          referrerPolicy="no-referrer"
+                          onClick={() => trackWhatsAppClick('contact_card')}
+                        >+55 (51) 98573-3001</a>
                       </p>
                       <p className="text-[10px] text-emerald-600 font-mono font-medium mt-1 flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />

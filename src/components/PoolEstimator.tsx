@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import { trackWhatsAppClick, trackClick } from '../lib/gtm';
 import { 
   Droplet, 
   Sparkles, 
@@ -265,6 +266,18 @@ ${selectedServices.includes('deck') ? `• Área do Deck Desejado: ${deckSize} m
 Por favor, gostaria de agendar uma visita técnica especializada em Porto Alegre para confirmar a impermeabilização e validar o orçamento definitivo.`;
 
     const encodedText = encodeURIComponent(msg);
+    // Track estimator WhatsApp lead
+    trackWhatsAppClick('estimator', estimatedCostMin);
+    trackClick('estimator_lead', {
+      pool_shape: shape,
+      pool_surface_area: surfaceArea,
+      pool_volume: volume,
+      services: selectedServices,
+      estimated_cost_min: estimatedCostMin,
+      estimated_cost_max: estimatedCostMax,
+      complexity: complexity.label,
+      timeline,
+    });
     window.open(`https://wa.me/5551985733001?text=${encodedText}`, '_blank', 'noopener,noreferrer');
   };
 

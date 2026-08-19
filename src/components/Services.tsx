@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { trackWhatsAppClick } from '../lib/gtm';
 import type { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/css';
@@ -332,6 +333,7 @@ export default function Services() {
                             href="https://wa.me/qr/EMRMBWHAHKLGE1"
                             target="_blank"
                             referrerPolicy="no-referrer"
+                            onClick={() => trackWhatsAppClick('services', selectedService?.title)}
                             className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 shadow-md shadow-green-500/10 text-white font-bold rounded-2xl transition-all duration-200 text-center"
                           >
                             <MessageSquare className="w-5 h-5" />

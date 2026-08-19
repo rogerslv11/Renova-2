@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import { trackPageView, trackVirtualPageView } from './lib/gtm';
 import Preloader from './components/Preloader';
 import ScrollAnimationController from './components/ScrollAnimationController';
 import Header from './components/Header';
@@ -17,10 +18,18 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import BackToTopButton from './components/BackToTopButton';
 
 export default function App() {
+  useEffect(() => {
+    // Track initial page load on the SPA
+    trackPageView();
+  }, []);
+
   // Universal smooth scroll handler that works for elements and coordinates
   const scrollToSection = (id: string) => {
     const targetElement = document.getElementById(id);
     if (targetElement) {
+      // Track virtual page view for SPA section navigation
+      trackVirtualPageView(`/${id}`);
+
       // Offset calculation for sticky header spacing on scrolling
       const headerOffset = 80;
       const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Award, Users, Zap, CheckCircle2, Wrench, ClipboardList, Check, Eye } from 'lucide-react';
+import { trackWhatsAppClick } from '../lib/gtm';
 import { differentiatorsData } from '../mockData';
 
 export default function Differentiators() {
@@ -125,6 +126,7 @@ export default function Differentiators() {
                   href="https://wa.me/5551999999999?text=Ol%C3%A1%21+Gostaria+de+ver+um+exemplo+do+relat%C3%B3rio+digital+de+visita+da+Renova."
                   target="_blank"
                   referrerPolicy="no-referrer"
+                  onClick={() => trackWhatsAppClick('differentiators_pdf')}
                   className="px-6 py-3.5 bg-primary text-white font-bold hover:bg-primary-hover rounded-2xl shadow-lg shadow-primary/20 transition-all text-center text-xs sm:text-sm border border-primary/20 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
                 >
                   <Eye className="w-4 h-4" />

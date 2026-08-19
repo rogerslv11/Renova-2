@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, HelpCircle, Search, MessageSquare, BookOpen, Settings, Droplet, Sparkles, ShieldCheck, HelpCircle as HelpIcon, CheckCircle2 } from 'lucide-react';
+import { trackWhatsAppClick } from '../lib/gtm';
 
 interface RichFAQItem {
   id: number;
@@ -278,6 +279,7 @@ export default function FAQ() {
             href="https://wa.me/qr/EMRMBWHAHKLGE1"
             target="_blank"
             referrerPolicy="no-referrer"
+            onClick={() => trackWhatsAppClick('faq')}
             className="w-full sm:w-auto px-6 py-4 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-bold rounded-2xl text-xs sm:text-sm flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-500/20 cursor-pointer shrink-0 transition-all hover:-translate-y-0.5 active:translate-y-0 relative z-10 hover:scale-[1.02]"
           >
             <MessageSquare className="w-4.5 h-4.5 fill-current" />

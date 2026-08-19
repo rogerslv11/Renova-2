@@ -1,11 +1,23 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Droplets, Sparkles } from 'lucide-react';
+import { trackWhatsAppClick } from '../lib/gtm';
 import victorAvatar from '../imgs/IMG-20260722-WA0040(1).jpg';
 
 export default function FloatingWhatsApp() {
   const [isOpen, setIsOpen] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
+
+  const handleOpenChat = () => {
+    trackWhatsAppClick('floating_chat');
+    setIsOpen(true);
+    setShowTooltip(false);
+  };
+
+  const handleStartConversation = () => {
+    trackWhatsAppClick('floating_chat_start');
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     // Show tooltip after 5 seconds to invite action
@@ -76,7 +88,7 @@ export default function FloatingWhatsApp() {
                 href="https://wa.me/qr/EMRMBWHAHKLGE1"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                onClick={() => setIsOpen(false)}
+                onClick={handleStartConversation}
                 className="w-full py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-2xl text-xs flex items-center justify-center gap-2 shadow-md shadow-green-500/10"
               >
                 <Send className="w-4 h-4 fill-white" />
@@ -117,10 +129,7 @@ export default function FloatingWhatsApp() {
         {/* Core Trigger Circle with Pulsing background layers */}
         <div className="absolute w-14 h-14 rounded-full bg-green-500/30 animate-ping z-0" />
         <button
-          onClick={() => {
-            setIsOpen(!isOpen);
-            setShowTooltip(false);
-          }}
+          onClick={handleOpenChat}
           className="relative z-10 w-14 h-14 rounded-full bg-gradient-to-tr from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-green-500/20"
           title="Fale Conosco"
         >

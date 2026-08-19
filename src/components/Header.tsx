@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Phone } from 'lucide-react';
+import { trackWhatsAppClick } from '../lib/gtm';
 import logoSrc from '../imgs/Logo.png'
 
 interface HeaderProps {
@@ -129,6 +130,7 @@ export default function Header({ onNavClick }: HeaderProps) {
               href="https://wa.me/qr/EMRMBWHAHKLGE1"
               target="_blank"
               referrerPolicy="no-referrer"
+              onClick={() => trackWhatsAppClick('header_desktop')}
               className="flex items-center gap-2 px-5 py-2.5 text-xs font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 shadow-md shadow-green-500/15 rounded-xl transition-all duration-300 group cursor-pointer hover:scale-[1.02] hover:shadow-green-500/25 active:scale-100"
             >
               <Phone className="w-3.5 h-3.5 group-hover:animate-bounce" />
@@ -142,6 +144,7 @@ export default function Header({ onNavClick }: HeaderProps) {
               href="https://wa.me/qr/EMRMBWHAHKLGE1"
               target="_blank"
               referrerPolicy="no-referrer"
+              onClick={() => trackWhatsAppClick('header_mobile')}
               className="flex items-center justify-center w-9 h-9 rounded-xl text-white bg-green-500 hover:bg-green-600 shadow-md shadow-green-500/10 transition-colors"
               title="Falar no WhatsApp"
             >
@@ -222,6 +225,7 @@ export default function Header({ onNavClick }: HeaderProps) {
                   href="https://wa.me/qr/EMRMBWHAHKLGE1"
                   target="_blank"
                   referrerPolicy="no-referrer"
+                  onClick={() => trackWhatsAppClick('header_mobile_menu')}
                   className="w-full py-3.5 text-center text-xs font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 rounded-xl flex items-center justify-center gap-2 shadow-sm"
                 >
                   <Phone className="w-4 h-4" />

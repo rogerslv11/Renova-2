@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Calendar, Phone, ArrowRight, Shield, Award, Users } from 'lucide-react';
+import { trackWhatsAppClick } from '../lib/gtm';
 import { StatItem } from '../types';
 import assets from '../data/assets.json';
 
@@ -123,6 +124,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
               href="https://wa.me/5551999999999?text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento+especialista+para+reforma+ou+impermeabiliza%C3%A7%C3%A3o+de+piscina."
               target="_blank"
               referrerPolicy="no-referrer"
+              onClick={() => trackWhatsAppClick('hero')}
               className="flex items-center justify-center gap-2.5 px-8 py-4.5 text-xs sm:text-sm font-bold text-slate-900 bg-white hover:bg-slate-50 border border-white hover:border-slate-100 shadow-lg hover:-translate-y-0.5 active:translate-y-0 rounded-2xl transition-all duration-300 group"
             >
               <Phone className="w-5 h-5 text-emerald-500 fill-emerald-500/20 group-hover:scale-110 transition-transform" />
