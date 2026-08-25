@@ -120,12 +120,14 @@ export default function Header({ onNavClick }: HeaderProps) {
 
           {/* Desktop Right Actions */}
           <div className="hidden lg:flex items-center gap-3">
-            <button
-              onClick={() => handleNavClickInternal('contato')}
+            <a
+              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              target="_blank"
+              referrerPolicy="no-referrer"
               className="px-4.5 py-2.5 text-xs font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 hover:border-slate-300 rounded-xl shadow-sm transition-all duration-300 cursor-pointer hover:scale-[1.02] active:scale-100"
             >
               Orçamento Rápido
-            </button>
+            </a>
             <a
               href="https://wa.me/qr/EMRMBWHAHKLGE1"
               target="_blank"
@@ -215,12 +217,14 @@ export default function Header({ onNavClick }: HeaderProps) {
               </div>
 
               <div className="flex flex-col gap-3 pt-6 border-t border-slate-100">
-                <button
-                  onClick={() => handleNavClickInternal('contato')}
+                <a
+                  href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                  target="_blank"
+                  referrerPolicy="no-referrer"
                   className="w-full py-3.5 text-center text-xs font-bold text-primary bg-blue-50/50 hover:bg-blue-100/50 border border-blue-100 rounded-xl transition-all duration-150"
                 >
                   Solicitar Orçamento Presencial
-                </button>
+                </a>
                 <a
                   href="https://wa.me/qr/EMRMBWHAHKLGE1"
                   target="_blank"

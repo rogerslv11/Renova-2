@@ -125,7 +125,14 @@ export default function Footer({ onNavClick }: FooterProps) {
               </div>
               <div className="flex gap-2.5 items-start">
                 <Phone className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                <span>+55 (51) 98573-3001</span>
+                <a 
+                  href="https://wa.me/qr/EMRMBWHAHKLGE1" 
+                  target="_blank" 
+                  referrerPolicy="no-referrer"
+                  className="hover:text-white transition-colors"
+                >
+                  +55 (51) 98573-3001
+                </a>
               </div>
               <div className="flex gap-2.5 items-start">
                 <Mail className="w-4 h-4 text-accent shrink-0 mt-0.5" />

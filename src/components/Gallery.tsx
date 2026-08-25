@@ -146,6 +146,24 @@ export default function Gallery() {
           </div>
         </div>
 
+        <div className="mt-20 text-center">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-6 bg-slate-50 p-6 sm:p-10 rounded-3.5xl border border-slate-100 shadow-sm relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12" />
+            <div className="text-left relative z-10">
+              <h4 className="font-display font-bold text-slate-900 text-lg">Gostou das nossas transformações?</h4>
+              <p className="text-sm text-slate-500 mt-1.5">Sua piscina pode ser a próxima da nossa galeria de sucessos.</p>
+            </div>
+            <a
+              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="w-full sm:w-auto px-10 py-4.5 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl transition-all shadow-lg shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 text-sm relative z-10"
+            >
+              Quero uma transformação assim
+            </a>
+          </div>
+        </div>
+
       </div>
 
       <AnimatePresence>

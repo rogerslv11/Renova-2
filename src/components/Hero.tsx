@@ -111,17 +111,19 @@ export default function Hero({ onCtaClick }: HeroProps) {
             transition={{ delay: 0.45, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
             className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
           >
-            <button
-              onClick={() => onCtaClick('contato')}
+            <a
+              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              target="_blank"
+              referrerPolicy="no-referrer"
               className="flex items-center justify-center gap-2.5 px-8 py-4.5 text-xs sm:text-sm font-bold text-white bg-primary hover:bg-primary-dark shadow-xl shadow-primary/20 hover:shadow-primary/40 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer group"
             >
               <Calendar className="w-5 h-5 text-accent group-hover:rotate-6 transition-transform" />
               <span>Solicitar Avaliação Técnica</span>
               <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
 
             <a
-              href="https://wa.me/5551999999999?text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento+especialista+para+reforma+ou+impermeabiliza%C3%A7%C3%A3o+de+piscina."
+              href="https://wa.me/qr/EMRMBWHAHKLGE1"
               target="_blank"
               referrerPolicy="no-referrer"
               onClick={() => trackWhatsAppClick('hero')}

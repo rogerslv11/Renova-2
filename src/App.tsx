@@ -11,8 +11,8 @@ import PartnerMarquee from './components/PartnerMarquee';
 import HowWeWork from './components/HowWeWork';
 import Differentiators from './components/Differentiators';
 import Gallery from './components/Gallery';
+import Leadership from './components/Leadership';
 import FAQ from './components/FAQ';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import BackToTopButton from './components/BackToTopButton';
@@ -25,6 +25,10 @@ export default function App() {
 
   // Universal smooth scroll handler that works for elements and coordinates
   const scrollToSection = (id: string) => {
+    if (id === 'contato') {
+      window.open('https://wa.me/qr/EMRMBWHAHKLGE1', '_blank', 'noreferrer');
+      return;
+    }
     const targetElement = document.getElementById(id);
     if (targetElement) {
       // Track virtual page view for SPA section navigation
@@ -80,17 +84,17 @@ export default function App() {
         {/* Standardized Glassmorphism Differentiators */}
         <Differentiators />
 
-        {/* Dynamic Services Grid (with interactive detail overlays) */}
-        <Services />
-
         {/* Structural Horizontal Timeline workflow */}
         <HowWeWork />
 
+        {/* Victor's Leadership & Bio */}
+        <Leadership />
+
+        {/* Dynamic Services Grid (with interactive detail overlays) */}
+        <Services />
+
         {/* Interactive FAQ Accordeon */}
         <FAQ />
-
-        {/* Contact form with validations + embedded dynamic maps */}
-        <Contact />
       </main>
 
       {/* Structured Footer map */}

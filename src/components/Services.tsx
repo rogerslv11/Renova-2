@@ -248,6 +248,19 @@ export default function Services() {
           </Swiper>
         </div>
 
+        <div className="mt-12 text-center">
+          <p className="text-slate-500 text-sm mb-6">Precisa de um serviço que não encontrou acima?</p>
+          <a
+            href="https://wa.me/qr/EMRMBWHAHKLGE1"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border border-slate-200 hover:border-primary/30 text-slate-800 hover:text-primary font-bold rounded-2xl transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 text-sm"
+          >
+            <span>Consultar Soluções Personalizadas</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+
       </div>
 
       <AnimatePresence>
