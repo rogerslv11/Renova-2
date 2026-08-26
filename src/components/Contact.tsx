@@ -198,7 +198,7 @@ export default function Contact() {
                       </h4>
                       <p className="text-slate-800 font-bold text-sm sm:text-base mt-1.5 hover:text-primary transition-colors">
                         <a
-                          href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                          href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
                           target="_blank"
                           referrerPolicy="no-referrer"
                           onClick={() => trackWhatsAppClick('contact_card')}

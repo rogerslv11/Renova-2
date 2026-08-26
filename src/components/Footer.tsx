@@ -126,7 +126,7 @@ export default function Footer({ onNavClick }: FooterProps) {
               <div className="flex gap-2.5 items-start">
                 <Phone className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <a 
-                  href="https://wa.me/qr/EMRMBWHAHKLGE1" 
+                  href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0" 
                   target="_blank" 
                   referrerPolicy="no-referrer"
                   className="hover:text-white transition-colors"

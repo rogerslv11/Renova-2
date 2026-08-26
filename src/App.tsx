@@ -26,7 +26,7 @@ export default function App() {
   // Universal smooth scroll handler that works for elements and coordinates
   const scrollToSection = (id: string) => {
     if (id === 'contato') {
-      window.open('https://wa.me/qr/EMRMBWHAHKLGE1', '_blank', 'noreferrer');
+      window.open('https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0', '_blank', 'noreferrer');
       return;
     }
     const targetElement = document.getElementById(id);

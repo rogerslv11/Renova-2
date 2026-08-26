@@ -307,7 +307,7 @@ export default function About() {
 
             <div className="pt-6">
               <a
-                href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-2xl transition-all shadow-xl shadow-slate-900/10 hover:-translate-y-0.5 active:translate-y-0"

@@ -112,7 +112,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
           >
             <a
-              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
               target="_blank"
               referrerPolicy="no-referrer"
               className="flex items-center justify-center gap-2.5 px-8 py-4.5 text-xs sm:text-sm font-bold text-white bg-primary hover:bg-primary-dark shadow-xl shadow-primary/20 hover:shadow-primary/40 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer group"
@@ -123,7 +123,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             </a>
 
             <a
-              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
               target="_blank"
               referrerPolicy="no-referrer"
               onClick={() => trackWhatsAppClick('hero')}

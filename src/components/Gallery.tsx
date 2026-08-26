@@ -154,7 +154,7 @@ export default function Gallery() {
               <p className="text-sm text-slate-500 mt-1.5">Sua piscina pode ser a próxima da nossa galeria de sucessos.</p>
             </div>
             <a
-              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
               target="_blank"
               referrerPolicy="no-referrer"
               className="w-full sm:w-auto px-10 py-4.5 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl transition-all shadow-lg shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 text-sm relative z-10"

@@ -252,7 +252,7 @@ export default function Leadership() {
 
                   <div className="mt-10 flex flex-col sm:flex-row gap-4">
                     <a
-                      href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                      href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
                       target="_blank"
                       referrerPolicy="no-referrer"
                       className="flex items-center justify-center gap-2 px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl transition-all shadow-lg shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0"

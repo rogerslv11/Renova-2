@@ -278,7 +278,7 @@ Por favor, gostaria de agendar uma visita técnica especializada em Porto Alegre
       complexity: complexity.label,
       timeline,
     });
-    window.open(`https://wa.me/5551985733001?text=${encodedText}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://api.whatsapp.com/send/?phone=555192756700&text=${encodedText}&type=phone_number&app_absent=0`, '_blank', 'noopener,noreferrer');
   };
 
   return (

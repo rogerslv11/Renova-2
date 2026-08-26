@@ -121,7 +121,7 @@ export default function Header({ onNavClick }: HeaderProps) {
           {/* Desktop Right Actions */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
               target="_blank"
               referrerPolicy="no-referrer"
               className="px-4.5 py-2.5 text-xs font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 hover:border-slate-300 rounded-xl shadow-sm transition-all duration-300 cursor-pointer hover:scale-[1.02] active:scale-100"
@@ -129,7 +129,7 @@ export default function Header({ onNavClick }: HeaderProps) {
               Orçamento Rápido
             </a>
             <a
-              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
               target="_blank"
               referrerPolicy="no-referrer"
               onClick={() => trackWhatsAppClick('header_desktop')}
@@ -143,7 +143,7 @@ export default function Header({ onNavClick }: HeaderProps) {
           {/* Mobile Actions & Hamburguer Toggle */}
           <div className="flex items-center gap-2 lg:hidden">
             <a
-              href="https://wa.me/qr/EMRMBWHAHKLGE1"
+              href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
               target="_blank"
               referrerPolicy="no-referrer"
               onClick={() => trackWhatsAppClick('header_mobile')}
@@ -218,7 +218,7 @@ export default function Header({ onNavClick }: HeaderProps) {
 
               <div className="flex flex-col gap-3 pt-6 border-t border-slate-100">
                 <a
-                  href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                  href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
                   target="_blank"
                   referrerPolicy="no-referrer"
                   className="w-full py-3.5 text-center text-xs font-bold text-primary bg-blue-50/50 hover:bg-blue-100/50 border border-blue-100 rounded-xl transition-all duration-150"
@@ -226,7 +226,7 @@ export default function Header({ onNavClick }: HeaderProps) {
                   Solicitar Orçamento Presencial
                 </a>
                 <a
-                  href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                  href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
                   target="_blank"
                   referrerPolicy="no-referrer"
                   onClick={() => trackWhatsAppClick('header_mobile_menu')}

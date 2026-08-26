@@ -276,7 +276,7 @@ export default function FAQ() {
             </p>
           </div>
           <a
-            href="https://wa.me/qr/EMRMBWHAHKLGE1"
+            href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
             target="_blank"
             referrerPolicy="no-referrer"
             onClick={() => trackWhatsAppClick('faq')}

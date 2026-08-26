@@ -85,7 +85,7 @@ export default function FloatingWhatsApp() {
             {/* Ingress to WhatsApp Action Button */}
             <div className="p-3 bg-white border-t border-slate-50">
               <a
-                href="https://wa.me/qr/EMRMBWHAHKLGE1"
+                href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 onClick={handleStartConversation}
