@@ -354,6 +354,19 @@ export default function Services() {
                             <MessageSquare className="w-5 h-5" />
                             <span>Contratar via WhatsApp</span>
                           </a>
+
+                          {selectedService.id === 8 && (
+                            <button
+                              onClick={() => {
+                                setSelectedService(null);
+                                navigate('/decks');
+                              }}
+                              className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl transition-all duration-200 text-center"
+                            >
+                              <span>Ver Página de Decks</span>
+                              <ArrowRight className="w-5 h-5" />
+                            </button>
+                          )}
                           
                           <button
                             onClick={() => setSelectedService(null)}
