@@ -1,6 +1,6 @@
 {
-  "name": "Remix: Renova",
-  "description": "Website institucional moderno e elegante para serviços profissionais de reforma, impermeabilização e engenharia de piscinas.",
+  "name": "Renova Piscinas & Decks",
+  "description": "Engenharia especializada em reformas de piscinas, impermeabilização definitiva e decks de madeira nobre.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
