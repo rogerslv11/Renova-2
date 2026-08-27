@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { trackPageView, trackVirtualPageView } from './lib/gtm';
 import Preloader from './components/Preloader';
 import ScrollAnimationController from './components/ScrollAnimationController';
@@ -38,7 +38,17 @@ function AppContent() {
     }
 
     if (location.pathname !== '/') {
-      navigate('/', { state: { scrollTo: id } });
+      navigate('/');
+      // Use a small delay to allow navigation to complete before scrolling
+      setTimeout(() => {
+        const targetElement = document.getElementById(id);
+        if (targetElement) {
+          const headerOffset = 80;
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 100);
       return;
     }
 
@@ -56,26 +66,6 @@ function AppContent() {
     }
   };
 
-  useEffect(() => {
-    if (location.pathname === '/' && location.state && (location.state as any).scrollTo) {
-      const id = (location.state as any).scrollTo;
-      setTimeout(() => {
-        const targetElement = document.getElementById(id);
-        if (targetElement) {
-          const headerOffset = 80;
-          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-          const offsetPosition = elementPosition - headerOffset;
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-      }, 100);
-      // Clear state after scrolling
-      navigate('/', { replace: true, state: {} });
-    }
-  }, [location, navigate]);
-
   const handleCtaClick = (id: string) => {
     scrollToSection(id);
   };
@@ -92,8 +82,8 @@ function AppContent() {
       <Header onNavClick={scrollToSection} />
 
       <Routes>
-        <Route path="/" element={<Home onCtaClick={handleCtaClick} />} />
-        <Route path="/decks" element={<Decks onCtaClick={handleCtaClick} />} />
+        <Route index element={<Home onCtaClick={handleCtaClick} />} />
+        <Route path="decks" element={<Decks onCtaClick={handleCtaClick} />} />
       </Routes>
 
       <Footer onNavClick={scrollToSection} />
