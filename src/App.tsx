@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { trackPageView, trackVirtualPageView } from './lib/gtm';
 import Preloader from './components/Preloader';
 import ScrollAnimationController from './components/ScrollAnimationController';
