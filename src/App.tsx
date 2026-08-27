@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import { trackPageView } from './lib/gtm';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Decks from './pages/Decks';
@@ -8,21 +6,9 @@ import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import BackToTopButton from './components/BackToTopButton';
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-}
-
 function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    trackPageView();
-  }, [location]);
 
   const scrollToSection = (id: string) => {
     if (id === 'contato') {
@@ -32,6 +18,7 @@ function AppContent() {
 
     if (id === 'decks') {
       navigate('/decks');
+      window.scrollTo(0, 0);
       return;
     }
 
@@ -39,21 +26,16 @@ function AppContent() {
       navigate('/');
       setTimeout(() => {
         const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     } else {
       const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
     <div className="min-h-screen bg-bg-soft text-slate-800 antialiased font-sans flex flex-col justify-between overflow-x-hidden">
-      <ScrollToTop />
       <FloatingWhatsApp />
       <BackToTopButton />
 
