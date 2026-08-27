@@ -17,7 +17,6 @@ export default function Header({ onNavClick }: HeaderProps) {
   // Exact list of 6 premium, highly structured navigation items
   const navItems = [
     { label: 'Início', id: 'home' },
-    { label: 'Decks Nobres', id: 'decks' },
     { label: 'Galeria', id: 'galeria' },
     { label: 'Sobre Nós', id: 'sobre' },
     { label: 'Diferenciais', id: 'diferenciais' },
