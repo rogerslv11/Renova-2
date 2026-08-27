@@ -132,7 +132,7 @@ export default function Footer({ onNavClick }: FooterProps) {
                   referrerPolicy="no-referrer"
                   className="hover:text-white transition-colors"
                 >
-                  +55 (51) 98573-3001
+                  +55 (51) 9275-6700
                 </a>
               </div>
               <div className="flex gap-2.5 items-start">
