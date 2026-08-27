@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import { trackPageView, trackVirtualPageView } from './lib/gtm';
-import Preloader from './components/Preloader';
-import ScrollAnimationController from './components/ScrollAnimationController';
+import { trackPageView } from './lib/gtm';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Decks from './pages/Decks';
@@ -39,51 +37,32 @@ function AppContent() {
 
     if (location.pathname !== '/') {
       navigate('/');
-      // Use a small delay to allow navigation to complete before scrolling
       setTimeout(() => {
-        const targetElement = document.getElementById(id);
-        if (targetElement) {
-          const headerOffset = 80;
-          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-          const offsetPosition = elementPosition - headerOffset;
-          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
         }
       }, 100);
-      return;
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-
-    const targetElement = document.getElementById(id);
-    if (targetElement) {
-      trackVirtualPageView(`/${id}`);
-      const headerOffset = 80;
-      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  const handleCtaClick = (id: string) => {
-    scrollToSection(id);
   };
 
   return (
     <div className="min-h-screen bg-bg-soft text-slate-800 antialiased font-sans flex flex-col justify-between overflow-x-hidden">
-      <Preloader />
-      <ScrollAnimationController />
       <ScrollToTop />
-      
       <FloatingWhatsApp />
       <BackToTopButton />
 
       <Header onNavClick={scrollToSection} />
 
       <Routes>
-        <Route index element={<Home onCtaClick={handleCtaClick} />} />
-        <Route path="decks" element={<Decks onCtaClick={handleCtaClick} />} />
+        <Route path="/" element={<Home onCtaClick={scrollToSection} />} />
+        <Route path="/decks" element={<Decks onCtaClick={scrollToSection} />} />
+        <Route path="*" element={<Home onCtaClick={scrollToSection} />} />
       </Routes>
 
       <Footer onNavClick={scrollToSection} />
