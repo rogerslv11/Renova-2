@@ -40,14 +40,14 @@ export default function Hero({
 
   const defaultTitle = (
     <>
-      Valorize sua piscina com um deck <br className="hidden sm:inline" />
+      Somos o ponto final em seus <br className="hidden sm:inline" />
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-blue-200 to-white font-black pb-1 inline-block">
-        bonito, resistente e bem instalado.
+        problemas com piscina.
       </span>
     </>
   );
 
-  const defaultSubtitle = "Fazemos decks para piscinas com acabamento de alto padrão, pensados para combinar com sua área externa e deixar o espaço muito mais bonito e agradável.";
+  const defaultSubtitle = "Especialista em piscinas de fibra e alvenaria. Realizamos reformas estruturais, impermeabilização definitiva, correção de vazamentos e revitalizações de alto padrão com garantia contratual.";
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-between overflow-hidden pt-28 pb-12 sm:pb-20">

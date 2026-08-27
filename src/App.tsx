@@ -5,7 +5,7 @@ import Preloader from './components/Preloader';
 import ScrollAnimationController from './components/ScrollAnimationController';
 import Header from './components/Header';
 import Home from './pages/Home';
-import HomePools from './pages/HomePools';
+import Decks from './pages/Decks';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import BackToTopButton from './components/BackToTopButton';
@@ -32,8 +32,8 @@ function AppContent() {
       return;
     }
 
-    if (id === 'piscinas') {
-      navigate('/piscinas');
+    if (id === 'decks') {
+      navigate('/decks');
       return;
     }
 
@@ -93,7 +93,7 @@ function AppContent() {
 
       <Routes>
         <Route path="/" element={<Home onCtaClick={handleCtaClick} />} />
-        <Route path="/piscinas" element={<HomePools onCtaClick={handleCtaClick} />} />
+        <Route path="/decks" element={<Decks onCtaClick={handleCtaClick} />} />
       </Routes>
 
       <Footer onNavClick={scrollToSection} />
