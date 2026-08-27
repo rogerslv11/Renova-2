@@ -294,9 +294,9 @@ export default function About() {
             </motion.div>
 
             {/* Checklist */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 gsap-stagger-container">
               {highlights.map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3">
+                <div key={index} className="gsap-stagger-item flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1 w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center text-primary">
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>

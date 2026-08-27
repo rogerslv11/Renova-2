@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Calendar, Phone, ArrowRight, Shield, Award, Users } from 'lucide-react';
 import { trackWhatsAppClick } from '../lib/gtm';
@@ -7,9 +7,17 @@ import assets from '../data/assets.json';
 
 interface HeroProps {
   onCtaClick: (id: string) => void;
+  title?: React.ReactNode;
+  subtitle?: string;
+  badge?: string;
 }
 
-export default function Hero({ onCtaClick }: HeroProps) {
+export default function Hero({ 
+  onCtaClick, 
+  title, 
+  subtitle,
+  badge = "Especialista em Impermeabilização de Elite"
+}: HeroProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroImages = assets.hero;
@@ -29,6 +37,17 @@ export default function Hero({ onCtaClick }: HeroProps) {
     }, 6500);
     return () => clearInterval(slideTimer);
   }, [heroImages.length]);
+
+  const defaultTitle = (
+    <>
+      Valorize sua piscina com um deck <br className="hidden sm:inline" />
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-blue-200 to-white font-black pb-1 inline-block">
+        bonito, resistente e bem instalado.
+      </span>
+    </>
+  );
+
+  const defaultSubtitle = "Fazemos decks para piscinas com acabamento de alto padrão, pensados para combinar com sua área externa e deixar o espaço muito mais bonito e agradável.";
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-between overflow-hidden pt-28 pb-12 sm:pb-20">
@@ -56,9 +75,21 @@ export default function Hero({ onCtaClick }: HeroProps) {
         
         {/* Animated aquatic wave background pattern */}
         <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden z-10 select-none pointer-events-none">
-          <svg className="absolute bottom-0 w-full h-12 text-slate-50" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <motion.svg 
+            animate={{ 
+              x: [-40, 0],
+              y: [0, 8, 0]
+            }}
+            transition={{ 
+              x: { duration: 12, repeat: Infinity, repeatType: "mirror", ease: "linear" },
+              y: { duration: 5, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }
+            }}
+            className="absolute bottom-0 w-[140%] h-12 text-slate-50 -left-[20%]" 
+            viewBox="0 0 1200 120" 
+            preserveAspectRatio="none"
+          >
             <path d="M0,0 C150,90 350,10 500,60 C650,110 850,20 1000,70 C1150,120 1250,50 1300,30 L1300,120 L0,120 Z" fill="currentColor"></path>
-          </svg>
+          </motion.svg>
         </div>
       </div>
 
@@ -77,39 +108,42 @@ export default function Hero({ onCtaClick }: HeroProps) {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             <span className="text-[10px] font-bold tracking-[0.2em] text-slate-100 font-mono uppercase">
-              Especialista em Impermeabilização de Elite
+              {badge}
             </span>
           </motion.div>
 
           {/* Core Title */}
-          <motion.h1
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display font-extrabold text-5xl sm:text-5.5xl lg:text-6.5xl text-white tracking-tight leading-[1.1]"
-          >
-            Somos o ponto final em seus  <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-blue-200 to-white font-black pb-1 inline-block">
-              problemas com piscina.
-            </span>
-          </motion.h1>
+          <div className="overflow-hidden">
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                delay: 0.15, 
+                duration: 1.1, 
+                ease: [0.16, 1, 0.3, 1] 
+              }}
+              className="font-display font-extrabold text-5xl sm:text-5.5xl lg:text-6.5xl text-white tracking-tight leading-[1.1]"
+            >
+              {title || defaultTitle}
+            </motion.h1>
+          </div>
 
           {/* Subtitle */}
           <motion.p
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.35, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
             className="mt-6 text-sm sm:text-base lg:text-lg text-slate-300 font-medium leading-relaxed max-w-2xl"
           >
-            Especialista em piscinas de fibra e alvenaria. Realizamos reformas estruturais, impermeabilização definitiva, correção de vazamentos e revitalizações de alto padrão com garantia contratual.
+            {subtitle || defaultSubtitle}
           </motion.p>
 
           {/* CTAs */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.45, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
+            transition={{ delay: 0.55, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
           >
             <a
               href="https://api.whatsapp.com/send/?phone=555192756700&text&type=phone_number&app_absent=0"

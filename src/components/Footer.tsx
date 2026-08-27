@@ -26,6 +26,7 @@ export default function Footer({ onNavClick }: FooterProps) {
 
   const quickLinks = [
     { label: 'Início', id: 'home' },
+    { label: 'Piscinas (Original)', id: 'piscinas' },
     { label: 'Galeria', id: 'galeria' },
     { label: 'Sobre Nós', id: 'sobre' },
     { label: 'Diferenciais', id: 'diferenciais' },

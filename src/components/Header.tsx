@@ -17,6 +17,7 @@ export default function Header({ onNavClick }: HeaderProps) {
   // Exact list of 6 premium, highly structured navigation items
   const navItems = [
     { label: 'Início', id: 'home' },
+    { label: 'Piscinas', id: 'piscinas' },
     { label: 'Galeria', id: 'galeria' },
     { label: 'Sobre Nós', id: 'sobre' },
     { label: 'Diferenciais', id: 'diferenciais' },
@@ -113,6 +114,9 @@ export default function Header({ onNavClick }: HeaderProps) {
                     />
                   )}
                   <span className="relative z-10">{item.label}</span>
+                  {!isActive && (
+                    <span className="absolute bottom-1.5 left-4.5 right-4.5 h-0.5 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  )}
                 </button>
               );
             })}

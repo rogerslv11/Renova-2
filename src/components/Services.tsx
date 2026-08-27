@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 import { trackWhatsAppClick } from '../lib/gtm';
 import type { Swiper as SwiperType } from 'swiper';
 
@@ -149,6 +150,7 @@ function ServiceCard({ service, onClick }: { service: typeof servicesData[0]; on
 }
 
 export default function Services() {
+  const navigate = useNavigate();
   const [selectedService, setSelectedService] = useState<typeof servicesData[0] | null>(null);
   const swiperRef = useRef<SwiperType | null>(null);
 

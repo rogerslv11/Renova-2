@@ -91,7 +91,7 @@ export default function FAQ() {
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20 gsap-reveal">
           <span className="text-xs font-bold tracking-[0.2em] text-primary uppercase font-mono px-3.5 py-1.5 bg-blue-50 border border-blue-100 rounded-full inline-flex items-center gap-1.5">
             <BookOpen className="w-3.5 h-3.5 text-primary" />
             Central de Dúvidas

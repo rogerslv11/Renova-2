@@ -52,7 +52,7 @@ export default function Gallery() {
 
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20 gsap-reveal">
           <span className="text-xs font-bold tracking-[0.2em] text-primary uppercase font-mono px-3.5 py-1.5 bg-blue-50 border border-blue-100 rounded-full inline-flex items-center gap-1.5">
             <Award className="w-3.5 h-3.5" />
             Casos de Sucesso
@@ -85,7 +85,7 @@ export default function Gallery() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 gsap-stagger-container">
             <AnimatePresence mode="popLayout">
               {filteredGallery.map((item) => (
                 <motion.div
@@ -99,7 +99,7 @@ export default function Gallery() {
                     setLightboxImage(item);
                     setLightboxIndex(0);
                   }}
-                  className="group bg-slate-50/40 rounded-3.5xl p-4 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300 cursor-pointer flex flex-col justify-between"
+                  className="gsap-stagger-item group bg-slate-50/40 rounded-3.5xl p-4 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300 cursor-pointer flex flex-col justify-between"
                 >
                   <div>
                     <div className="relative h-64 sm:h-72 rounded-2.5xl overflow-hidden mb-4 bg-slate-100">
